@@ -29,11 +29,15 @@ keymap("n", "<C-W>m", ":WinShift<cr>", opts)
 -- keymap("n", "j", "<Plug>(accelerated_jk_gj)", opts)
 -- keymap("n", "k", "<Plug>(accelerated_jk_gk)", opts)
 
+-- Terminal相关
+keymap("n", "st", ":sp | terminal<CR>", opts)
+keymap("n", "stv", ":vsp | terminal<CR>", opts)
+
 -- 上下滚动浏览
-keymap("n", "<C-j>", "5j", opts)
-keymap("n", "<C-k>", "5k", opts)
-keymap("v", "<C-j>", "5j", opts)
-keymap("v", "<C-k>", "5k", opts)
+-- keymap("n", "<C-j>", "5j", opts)
+-- keymap("n", "<C-k>", "5k", opts)
+-- keymap("v", "<C-j>", "5j", opts)
+-- keymap("v", "<C-k>", "5k", opts)
 -- ctrl u / ctrl + d  只移动9行，默认移动半屏
 keymap("n", "<C-u>", "10k", opts)
 keymap("n", "<C-d>", "10j", opts)

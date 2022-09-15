@@ -160,4 +160,7 @@ return packer.startup(function(use)
     use "folke/todo-comments.nvim"
     use "voldikss/vim-translator"
     use "Pocco81/HighStr.nvim"
+
+    use "lewis6991/gitsigns.nvim"
+    use 'sindrets/diffview.nvim'
 end)
